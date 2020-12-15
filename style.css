@@ -8,3 +8,132 @@
     --purple: #772aff;
     --blue: #2196f3;
 }
+
+.text1 {
+    color: var(--yellow);
+    margin-bottom: 20px;
+    letter-spacing: 5px;
+    position: relative;
+    animation: text 3s;
+}
+
+.text-2 {
+    position: relative;
+    animation: textdelay 4s;
+}
+
+.bg-dark-blue {
+    background: var(--dark-blue);
+}
+
+#skill .container .row .col-md-4 .box {
+    position: relative;
+    display: flex;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    background: var(--more-dark-blue);
+    color: white;
+}
+
+#skill .container .row .col-md-4 .box:before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: white;
+    z-index: -1;
+}
+
+#skill .container .row .col-md-4 .box:after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: white;
+    z-index: -2;
+    filter: blur(10px);
+}
+
+#skill .container .row .col-md-4 .box .glass {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    display: block;
+    background: rgba(255, 255, 255, .1);
+}
+
+#skill .container .row .col-md-4 .box .content a {
+    position: relative;
+    margin: 20px 0 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 1px solid white;
+    display: inline-block;
+    color: #fff;
+    transition: 0.5s;
+    transform: translateY(-40px);
+    opacity: 0;
+    visibility: hidden;
+}
+
+#skill .container .row .col-md-4 .box:hover .content a {
+    transform: translateY(0px);
+    opacity: 1;
+    visibility: visible;
+}
+
+#skill .container .row .col-md-4 .box .content a:hover {
+    background: var(--yellow);
+    color: var(--dark-blue);
+}
+
+@keyframes text {
+    0% {
+        margin-bottom: -40px;
+    }
+
+    30% {
+        letter-spacing: 25px;
+        margin-bottom: -40px;
+    }
+
+    85% {
+        letter-spacing: 8px;
+        margin-bottom: -40px;
+    }
+}
+
+@keyframes textdelay {
+    0% {
+        overflow: hidden;
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 0;
+        overflow: hidden;
+    }
+
+    50% {
+        opacity: 0;
+        overflow: hidden;
+    }
+
+    75% {
+        opacity: 0;
+        overflow: hidden;
+        animation-delay: 3s;
+    }
+
+    100% {
+        overflow: visible;
+        opacity: 1;
+    }
+}
