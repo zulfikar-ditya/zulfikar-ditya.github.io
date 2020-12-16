@@ -26,37 +26,18 @@
     background: var(--dark-blue);
 }
 
+#skill {
+    background: linear-gradient(45deg, var(--blue), var(--yellow), var(--pink));
+    animation: backgroundChange 5s infinite;
+}
+
 #skill .container .row .col-md-4 .box {
     position: relative;
     display: flex;
-    height: 300px;
     justify-content: center;
     align-items: center;
     background: var(--more-dark-blue);
     color: white;
-}
-
-#skill .container .row .col-md-4 .box:before {
-    content: '';
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    right: -2px;
-    bottom: -2px;
-    background: white;
-    z-index: -1;
-}
-
-#skill .container .row .col-md-4 .box:after {
-    content: '';
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    right: -2px;
-    bottom: -2px;
-    background: white;
-    z-index: -2;
-    filter: blur(10px);
 }
 
 #skill .container .row .col-md-4 .box .glass {
@@ -67,6 +48,7 @@
     height: 100%;
     display: block;
     background: rgba(255, 255, 255, .1);
+    transition: .5s;
 }
 
 #skill .container .row .col-md-4 .box .content a {
@@ -83,15 +65,31 @@
     visibility: hidden;
 }
 
+#skill .container .row .col-md-4 .box:hover .glass {
+    width: 100%;
+    animation: glassDelay 1s;
+}
+
 #skill .container .row .col-md-4 .box:hover .content a {
     transform: translateY(0px);
     opacity: 1;
     visibility: visible;
 }
 
-#skill .container .row .col-md-4 .box .content a:hover {
+#skill .container .row .col-md-4:nth-child(1) .box .content a:hover {
+    background: var(--pink);
+    color: white;
+}
+
+#skill .container .row .col-md-4:nth-child(2) .box .content a:hover {
     background: var(--yellow);
     color: var(--dark-blue);
+    border-color: var(--dark-blue);
+}
+
+#skill .container .row .col-md-4:nth-child(3) .box .content a:hover {
+    background: var(--blue);
+    color: white;
 }
 
 @keyframes text {
@@ -135,5 +133,32 @@
     100% {
         overflow: visible;
         opacity: 1;
+    }
+}
+
+@keyframes glassDelay {
+    0% {
+        width: 50%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes backgroundChange {
+    0% {
+
+        background: linear-gradient(45deg, var(--blue), var(--yellow), var(--pink));
+    }
+
+    35% {
+
+        background: linear-gradient(45deg, var(--yellow), var(--pink), var(--blue));
+    }
+
+    75% {
+
+        background: linear-gradient(45deg, var(--pink), var(--blue), var(--yellow));
     }
 }

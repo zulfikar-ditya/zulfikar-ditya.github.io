@@ -32,7 +32,7 @@
 
 <body>
 
-	<nav class="navbar navbar-expand-lg navbar-dark text-capitalize fixed-top" style="background-color: var(--cyan);">
+	<nav class="navbar navbar-expand-lg navbar-dark text-capitalize fixed-top shadow-lg" style="background-color: var(--cyan);">
 		<div class="container">
 
 			<a class="navbar-brand fs-3" href="/">Zulfikar</a>
@@ -49,6 +49,9 @@
 						<a class="nav-link active" aria-current="page" href="#skill">skills</a> 
 					</li>
 					<li class="nav-item"> 
+						<a class="nav-link active" aria-current="page" href="#portofolio">Portofolio</a> 
+					</li>
+					<li class="nav-item"> 
 						<a class="nav-link active" aria-current="page" href="#contact">Contact</a> 
 					</li>
 				</ul>
@@ -57,7 +60,7 @@
 		</div>
 	</nav>
 
-	<div class="jumbotron text-white text-capitalize d-flex align-items-center text-center" style="background-color: var(--dark-blue); min-height: 100vh;">
+	<div class="jumbotron text-white text-capitalize d-flex align-items-center text-center" style="background-color: var(--dark-blue); min-height: 100vh; position: sticky;">
 		<div class="container p-5 mt-5">
 			<h3 class="display-5 fs-4 text1">Hi There !!!</h3>
 			<div class="text-2">
@@ -74,24 +77,24 @@
 	<div class="container" id="about">
 		<div class="row align-items-center ">
 			<div class="col-md-6"> <img src="images/Programming-rafiki.png" alt="" srcset="" class="img-fluid"> </div>
-			<div class="col-md-6 text-justify align-self-center p-5">
+			<div class="col-md-6 align-self-center p-5">
 				<h1 class="display-5">About Me</h1>
 				<hr class="w-50">
-				<p> Hi My name is Zulfikar ditya, i am 17 years old. I am learn programming form youtube and from my <a href="https://www.smkn1jenpo.sch.id/" target="_blank">School.</a> I Have a drean to becoming software engineer in big tech company like Google or Amazon</p>
+				<p style="text-align: justify;"> Hi My name is Zulfikar ditya, i am 17 years old. I am learn programming from youtube and from my <a href="https://www.smkn1jenpo.sch.id/" target="_blank">School.</a> I Have a dream to becoming software engineer in big tech company like Google or Amazon.</p>
 			</div>
 		</div>
 	</div>
 
-	<div class="text-white bg-dark-blue" id="skill" style="background: linear-gradient(45deg, var(--blue), var(--dark-blue),var(--pink));">
+	<div class="text-white" id="skill">
 		<div class="container p-5">
 			<h1 class="text-center p-4">Skills</h1>
 
 			<div class="row justify-content-center align-items-center text-center">
 
 				<div class="col-md-4 mb-4">
-					<div class="box shadow">
+					<div class="box shadow-lg p-5 rounded">
 						<div class="glass"></div>
-						<div class="content"> <i class="fab fa-bootstrap display-2" style="color: var(--purple);"></i>
+						<div class="content p-5"> <i class="fab fa-bootstrap display-2" style="color: var(--purple);"></i>
 							<h2 class="display-5">Bootstrap</h2> 
 							<a href="https://getbootstrap.com/" target="_blank"rel="noopener noreferrer">Read More</a>
 						</div>
@@ -99,9 +102,9 @@
 				</div>
 
 				<div class="col-md-4 mb-4">
-					<div class="box shadow">
+					<div class="box shadow-lg p-5 rounded">
 						<div class="glass"></div>
-						<div class="content"> <svg class="display-2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="0.79em" height="1em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 326">
+						<div class="content p-5"> <svg class="display-2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="0.79em" height="1em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 326">
 							<g fill="#2BA977">
 								<path
 									d="M114.784 0h53.278v244.191c-27.29 5.162-47.38 7.193-69.117 7.193C33.873 251.316 0 222.245 0 166.412c0-53.795 35.93-88.708 91.608-88.708c8.64 0 15.222.68 23.176 2.717V0zm1.867 124.427c-6.24-2.038-11.382-2.717-17.965-2.717c-26.947 0-42.512 16.437-42.512 45.243c0 28.046 14.88 43.532 42.17 43.532c5.896 0 10.696-.332 18.307-1.351v-84.707z" />
@@ -117,9 +120,9 @@
 				</div>
 
 				<div class="col-md-4 mb-4">
-					<div class="box shadow">
+					<div class="box shadow-lg p-5 rounded">
 						<div class="glass"></div>
-						<div class="content"> <i class="fab fa-laravel display-2" style="color: var(--pink);"></i>
+						<div class="content p-5"> <i class="fab fa-laravel display-2" style="color: var(--pink);"></i>
 							<h2 class="display-5">Laravel</h2> 
 							<a href="https://www.laravel.com/" target="_blank" rel="noopener noreferrer">Read More</a>
 						</div>
@@ -130,14 +133,80 @@
 		</div>
 	</div> 
 
+	<div class="container">
+		<h1 class="text-center mt-5" id="portofolio">Portofolio</h1>
+		<hr class="mb-5">
+		<div class="row justify-content-center text-capitalize" style="text-align: justify;">
+
+			<div class="col-md-4 border-none text-white mb-3">
+				<div class="card p-5 bg-dark-blue rounded shadow-lg border-none">
+					<div class="card-content">
+						<span class="card-title fs-4">Laravel Library management</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-4 border-none text-white mb-3">
+				<div class="card p-5 bg-dark-blue rounded shadow-lg border-none">
+					<div class="card-content">
+						<span class="card-title fs-4">Laravel Blogging App</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-4 border-none text-white mb-3">
+				<div class="card p-5 bg-dark-blue rounded shadow-lg border-none">
+					<div class="card-content">
+						<span class="card-title fs-4">Laravel Todo List</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-4 border-none text-white mb-3">
+				<div class="card p-5 bg-dark-blue rounded shadow-lg border-none">
+					<div class="card-content">
+						<span class="card-title fs-4">Django Library management</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-4 border-none text-white mb-3">
+				<div class="card p-5 bg-dark-blue rounded shadow-lg border-none">
+					<div class="card-content">
+						<span class="card-title fs-4">Django thumnails vote</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-4 border-none text-white mb-3">
+				<div class="card p-5 bg-dark-blue rounded shadow-lg border-none">
+					<div class="card-content">
+						<span class="card-title fs-4">Django Blogging App</span>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="row justify-content-center my-2">
+			<div class="col-md-2 text-center">
+				<a href="https://github.com/zulfikar-dityaa#hi-there" class="btn btn-outline-primary">See More</a>
+			</div>
+		</div>
+	</div>
+
 	<!-- Footer -->
-	<footer class="page-footer font-small stylish-color-dark pt-4" id="contact">
+	<footer class="page-footer font-small stylish-color-dark pt-4 bg-dark-blue text-white mt-5" id="contact">
+		<h1 class="my-5 text-center">Contact</h1>
 		<!-- Footer Links -->
 		<div class="container text-center text-md-left">
 
 			<div class="row justify-content-center">
 				<div class="col-3">
 					<a href="https://www.instagram.com/zulfikar.ditya/" class="text-danger" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram fs-2"></i></a>
+				</div>
+				<div class="col-3">
+					<a href="mailto:zulfikarditya.info@gmail.com" target="_blank" class="text-warning"><i class="far fa-envelope fs-2"></i></a>
 				</div>
 				<div class="col-3">
 					<a href="https://t.me/Zulfikar_ditya" target="_blank" rel="noopener noreferrer" style="color: var(--blue);"><i class="fab fa-telegram fs-2"></i></a>
