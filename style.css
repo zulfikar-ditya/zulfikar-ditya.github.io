@@ -36,8 +36,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: var(--more-dark-blue);
-    color: white;
+    background: rgba(255, 255, 255, .1);
+    color: black;
 }
 
 #skill .container .row .col-md-4 .box .glass {
@@ -56,9 +56,9 @@
     margin: 20px 0 0;
     padding: 10px 20px;
     text-decoration: none;
-    border: 1px solid white;
+    border: 1px solid black;
     display: inline-block;
-    color: #fff;
+    color: black;
     transition: 0.5s;
     transform: translateY(-40px);
     opacity: 0;
